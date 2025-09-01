@@ -1,0 +1,173 @@
+@import url(https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css);
+@import url('https://abbie.github.io/discord-css/import.css');
+@import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expProfile.css");
+
+:root {
+    --\\--compact-title-bar: false;
+    --\\--compact-input-box: true;
+    --\\--compact-context-menu: true;
+    --\\--compact-user-area: false;
+    --\\--compact-channel-categories: false;
+    --\\--compact-server-list: true;
+
+    --\\--hide-nameplates: false;
+    --\\--hide-guild-tags: false;
+    --\\--hide-profile-effects: false;
+    --\\--hide-avatar-decorations: false;
+    --\\--hide-gradient-glow-usernames: false;
+    --\\--hide-server-boost-goal: true;
+    --\\--hide-server-activity: false;
+    --\\--hide-user-activity: false;
+    --\\--hide-context-menu-quick-reactions: true;
+    --\\--hide-hover-quick-reactions: false;
+    --\\--hide-image-edit-button: true;
+    --\\--hide-gif-button: false;
+    --\\--hide-sticker-button: false;
+    --\\--hide-emoji-button: false;
+    --\\--hide-apps-button: true;
+    --\\--hide-gift-button: true;
+    --\\--hide-help-button: false;
+    --\\--hide-shop-button: false;
+    --\\--hide-nitro-button: false;
+    --\\--hide-active-now: false;
+    --\\--hide-nitro-upsells: true;
+    --\\--hide-vencord-desktop-platform-indicator: true;
+    --\\--hide-cluttery-badges: false;
+    /* ^ hides quest, hypesquad, active dev, and discriminator badges */
+
+    --\\--darker-scrollbar: true;
+    --\\--darker-hovered-message: true;
+    --\\--prevent-sidebar-resizing: false;
+    --\\--fix-minor-icon-misalignments: true;
+}
+
+
+#vc-spotify-player {
+    background-color: var(--background-base-lower) !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid var(--border-subtle);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 130px;
+    margin-bottom: 12px;
+}
+
+section[class^="panels_"] {
+    background: transparent !important;
+    border: 0px !important;
+    border-left: 0px;
+}
+
+section[class^="panels_"] div[class^="container__"] {
+    background-color: var(--background-gradient-highest, var(--background-base-low));
+    border: 0px solid var(--border-subtle);
+    border-radius: 20px !important;
+}
+
+section[class^="panels_"] div[class^="panel_"] {
+    margin-bottom: 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-subtle);
+}
+
+header[class^="header_"] {
+    border-bottom: 0px;
+}
+
+section[class^="panels_"] div[class^="listeningAlong_"] {
+    border: 1px solid var(--border-subtle) !important;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+
+.wrapper_e131a9 {
+    margin-bottom: 12px;
+    border-radius: 20px; /*adjust this part*/
+    background: var(--background-base-lower);
+}
+
+.button_e131a9 {
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+:root {
+    --custom-app-top-bar-height: 30px
+}
+[class^=bar] {
+    padding: unset;
+    > [class^=leading]
+    {
+        display: none;
+    }
+    > [class^=title] {
+        position: relative;
+        padding-left: 8px;
+        > [class^=title] > [class^=icon] {
+            height: 16px;
+            width: 16px;
+        }
+    }
+    > [class^=trailing] {
+        gap: unset;
+        > [class^=recentsIcon] {
+            &:hover {
+                background-color: var(--background-modifier-hover);
+                color: var(--interactive-hover);
+            }
+            > [class^=button] {
+                height: 16px;
+                width: 16px;
+                padding: 3px 12px;
+                > [class^=iconBadge] {
+                     bottom: 2px;
+                     right: 11px;
+                }
+            }
+        }
+        > a[href="https://support.discord.com"] {
+            display: none;
+        }
+        > [class^=button]
+        {
+            height: 16px;
+            width: 16px;
+            padding: 3px 12px;
+            &:hover
+            {
+                background-color: var(--background-modifier-hover);
+                color: var(--interactive-hover);
+            }
+        }
+        > [class^=winButtons] {
+            gap: unset;
+            > [class^=winButton] {
+                width: calc(var(--custom-app-top-bar-height) * 1);
+            }
+        }
+    }
+}
+
+[class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
+[data-list-item-id*="guildsnav_"] > [class*="icon_"] {
+    border-radius: 40% !important;
+}
+
+.channelTextArea__74017 {
+    border-radius: 15px;
+}
+.themedBackground__74017 {
+   border-radius: 15px;
+}
+
+.wrapper__6e9f8[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 {
+  background: url("https://raw.githubusercontent.com/ctbug/images/refs/heads/main/eepy_neko.jpg") no-repeat center !important;
+  background-size: cover !important;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.wrapper__6e9f8[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 svg {
+  display: none;
+}
+
